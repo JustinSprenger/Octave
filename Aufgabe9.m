@@ -18,12 +18,7 @@ bar(a)
 
 
 disp('Aufgabe 2)')
-eins=0
-zwei=0
-drei=0
-vier=0
-fuenf=0
-sechs=0
+ergebnis= zeros(1,36)
 for a = 1:6
   for b = 1:6
     for c = 1:6
@@ -33,13 +28,20 @@ for a = 1:6
             
             v = a + b + c + d + e + f;
             erge(1,f) = v;
+            ergebnis(1,6+b+c+d+e+f) += a+b+c+d+e+f;
           endfor
+          ergebnis(1,6+b+c+d+e) += a+b+c+d+e;
         endfor
+        ergebnis(1,6+b+c+d) += a+b+c+d;   
       endfor
+      ergebnis(1,6+b+c) += a+b+c;
     endfor
+    ergebnis(1,6+b) += a+b;
   endfor
+  ergebnis(1,6) += a;
 endfor
-bar(erge);
+%bar(ergebnis);
+ergebnis
 a=[1, 2, 3]
 b=[1, 2, 3]
 
