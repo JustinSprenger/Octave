@@ -6,8 +6,6 @@ warning("off");
 # einer Augensumme mit den Parametern: Augensumme fuer die gesuchte
 # Kombinationsanzahl und Anzahl der Wuerfel zur Bestimmung der Kombinationen
 
-augensumme=[];
-anzahlWuerfel=[];
 
 function moe(augensumme , anzahlWuerfel)
  y=0;
