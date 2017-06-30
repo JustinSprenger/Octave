@@ -18,16 +18,44 @@ bar(a)
 
 
 disp('Aufgabe 2)')
+eins=0
+zwei=0
+drei=0
+vier=0
+fuenf=0
+sechs=0
+for a = 1:6
+  for b = 1:6
+    for c = 1:6
+      for d = 1:6
+        for e = 1:6
+          for f = 1:6
+            
+            v = a + b + c + d + e + f;
+            erge(1,f) = v;
+          endfor
+        endfor
+      endfor
+    endfor
+  endfor
+endfor
+bar(erge);
+a=[1, 2, 3]
+b=[1, 2, 3]
 
-
-
-
-
+ndgrid(a,b)
 
 disp('Aufgabe 3)')
 
+p=0.02
+n=[250, 500, 1000, 2000]
+erw = p*n
+sig = sqrt(n * p * (1 - p))
 
 
+disp('Aufgabe 4')
 
-
-
+p=1/3
+k=[0, 1, 2, 3, 4, 5]
+erg = binopdf(k, 5, p)
+%bar(erg)
